@@ -1,0 +1,14 @@
+https://techlib.net/definition/camelcase.html
+
+
+Atención al tabulado. Poder bajar una extensión que te ayude con este punto.
+Todas las etiquetas en tu html deben estar en minúscula.
+En el archivo index.html tenés una etiqueta "lu" que está incorrecta. Se tendría que llamar "ul" en caso de que quieras hacer una lista.
+Los nombres de todos tus archivos no pueden contener espacios. Te recomiendo que utilices camelCase.
+En Acerca de.html tenés etiquetas "li" que si o si tienen que estar dentro de una etiqueta "ul", ya que las mismas son de listas.
+Para los nombres de las clases te recomiendo que emplees camelCase, puesto que es mucho más sencillo la lectura y porque es una buena práctica.
+Te dejo info sobre camelCase: https://techlib.net/definition/camelcase.html
+La etiqueta "br" ya no debe ser utilizada, porque utilizaremos el archivo .css para darle todo el estilo a la página.
+Comentar cada una de las secciones de tu página. Tanto en tus archivos html como css.
+No abuses de padding y margin para acomodar los elementos, ya que cuando apliques flexbox te van a complicar el desarrollo de tu página.
+Varios de los puntos anteriormente detallados se repiten varias veces en distintos archivos. Por favor revisalos.
