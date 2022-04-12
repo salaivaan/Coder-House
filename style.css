@@ -145,6 +145,7 @@ h1 {
     color: lavenderblush;
     grid-area: header;
     text-align: center;
+    
 }
 
 nav ul {
@@ -380,6 +381,11 @@ form {
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;
     margin-left: 3.125rem;
+    transition: all 2.5s;
+}
+
+.preguntas:hover {
+    transform: rotate(50deg);
 
 }
 
@@ -397,7 +403,17 @@ form {
     width: 75%;
     margin-left: 4.0625rem;
     margin-top: 2.5rem;
+    transition: all 1s;
 
+}
+
+.acercaText:hover {
+display: flex;
+flex-direction: row;
+font-size: larger;
+font-stretch: extra-expanded;
+width: 80%;  
+justify-content: center;  
 }
 
 .video {
@@ -405,5 +421,6 @@ form {
     grid-area: video;
     margin-left: -15.625rem;
     margin-top: 2.5rem;
+
 
 }
