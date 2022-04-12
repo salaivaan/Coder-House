@@ -14,7 +14,7 @@
 
 }
 
-@media screen and  (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
     .cuerpo {
         display: grid;
         grid-template-areas:
@@ -28,14 +28,12 @@
 
     }
 
-    .nav ul{
+    .nav ul {
         display: block
-
-
     }
 
 
-    
+
     .redes {
         display: flex;
         flex-direction: row;
@@ -44,7 +42,7 @@
         width: 30%;
 
     }
-    
+
 }
 
 
@@ -59,7 +57,7 @@
     grid-template-areas:
         "header header header header"
         "nav nav nav nav"
-        "imgs imgs form form"
+        "imgs form form form"
         "footer footer footer footer"
         "textoo textoo textoo textoo";
 }
@@ -119,6 +117,12 @@
     border-style: inset;
     border-width: 0.5rem;
     grid-area: header;
+    transition: all 2s;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+
 }
 
 /*index */
@@ -132,6 +136,14 @@
     margin-bottom: 3.125rem;
     margin-top: 0.625rem;
     grid-area: img;
+    transition: all 2s;
+
+}
+
+.trans:hover {
+    transform: scale(1.3);
+    border: 1rem;
+    border-color: aqua;
 }
 
 h1 {
@@ -163,161 +175,203 @@ nav ul {
 }
 
 
-    nav li a {
-        display: block;
-        padding: 0.5em 1em;
-        text-align: center;
-        margin-left: 7.5rem;
+nav li a {
+    display: block;
+    padding: 0.5em 1em;
+    text-align: center;
+    margin-left: 7.5rem;
 
+}
+
+
+/*fin index*/
+footer {
+
+    grid-area: footer;
+}
+
+.redes {
+    font-style: oblique;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 8.5rem;
+    margin-top: 10rem;
+    color: lavenderblush;
+    grid-area: footer;
+    border-radius: 1.5625rem;
+    flex-wrap: wrap;
+    transition: all 1s;
+    
+}
+
+.redes:hover {
+
+    transform: scale(1.2);
+    animation: change 3s ease-in;
+}
+
+@keyframes change {
+
+
+
+    25% { opacity: 75%;
+    border-style: dashed;
+    border-color: darkgoldenrod;
+
+    
     }
 
+    50% {
+        opacity: 50%;
 
-    /*fin index*/
-    footer {
-
-        grid-area: footer;
+    
     }
 
-    .redes {
-        font-style: oblique;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 8.5rem;
-        margin-top: 10rem;
-        color: lavenderblush;
-        grid-area: footer;
-        border-radius: 1.5625rem;
-        flex-wrap: wrap;
-    }
-
-    .texto-a {
-        display: block;
-        color: lavenderblush;
-        text-align: center;
+    100% {  opacity:  25%;
 
     }
+}
 
-    /* fin de index*/
-    /*contacto*/
-    .formulario {
-        grid-area: form;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+.texto-a {
+    display: block;
+    color: lavenderblush;
+    text-align: center;
 
-        margin-top: 5rem;
-        margin-right: 25rem;
-        border: 100%;
-        border-style: groove;
-    }
+}
 
-    .imagenesDos {
-        display: flex;
-        flex-direction: column;
-        width: 18%;
-        grid-area: imgs;
-        margin-left: 1.875rem;
+/* fin de index*/
+/*contacto*/
+.formulario {
+    grid-area: form;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
-    }
+    margin-top: 5rem;
+    margin-right: 25rem;
+    border: 100%;
+    border-style: groove;
+}
 
+.imagenesDos {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    grid-area: imgs;
+    margin-left: 2rem;
+    transition: all 1s;
 
+}
 
-    /*productos horientacion horizontal o verticar a definir, corregir la posicion de los t*/
+.imga {
+    margin-bottom: 1rem;
+}
 
+.imgb {
+    margin-bottom: 1rem;
+}
 
-
-    .listados {
-
-        font-size: medium;
-        font-family: 'Courier New', Courier, monospace;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        grid-area: list;
-        align-content: stretch;
-        padding-left: 2.5rem;
-        margin-left: 0%;
-
-    }
-
-    .imagenesTres {
-        grid-area: ima;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 1.5625rem;
-
-    }
-
-    .remeras {
-
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .bikers {
-        display: flex;
-        flex-direction: row;
+.imagenesDos:hover {
+    transform: scale(4);
+}
 
 
-    }
+/*productos horientacion horizontal o verticar a definir, corregir la posicion de los t*/
 
-    .abrigos {
-        display: flex;
-        flex-direction: row;
 
-    }
 
-    .bijouterie {
-        display: flex;
-        flex-direction: row;
+.listados {
 
-    }
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: list;
+    align-content: stretch;
+    padding-left: 2.5rem;
+    margin-left: 0%;
 
-    .productos {
-        display: flex;
-        width: 15.625rem;
-        height: 15.625rem;
+}
 
-    }
+.imagenesTres {
+    grid-area: ima;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1.5625rem;
 
-    /*FAQ agregar preguntas sin tapar el background*/
-    .preguntas {
-        text-align: left;
-        font-size: large;
-        font-style: italic;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        grid-area: preg;
-        margin-top: 6.25rem;
-        margin-bottom: 6.25rem;
-        margin-left: 3.125rem;
+}
 
-    }
+.remeras {
 
-    /*Buscar una fuerte mas apropiada*/
-    .acercaText {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-decoration: solid;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: medium;
-        font-stretch: expanded;
-        grid-area: info;
-        text-align: left;
-        width: 75%;
-        margin-left: 4.0625rem;
-        margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
 
-    }
+}
 
-    .video {
-        overflow: visible;
-        grid-area: video;
-        margin-left: -15.625rem;
-        margin-top: 2.5rem;
+.bikers {
+    display: flex;
+    flex-direction: row;
 
-    }
+
+}
+
+.abrigos {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.bijouterie {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.productos {
+    display: flex;
+    width: 15.625rem;
+    height: 15.625rem;
+
+}
+
+/*FAQ agregar preguntas sin tapar el background*/
+.preguntas {
+    text-align: left;
+    font-size: large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    grid-area: preg;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    margin-left: 3.125rem;
+
+}
+
+/*Buscar una fuerte mas apropiada*/
+.acercaText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-stretch: expanded;
+    grid-area: info;
+    text-align: left;
+    width: 75%;
+    margin-left: 4.0625rem;
+    margin-top: 2.5rem;
+
+}
+
+.video {
+    overflow: visible;
+    grid-area: video;
+    margin-left: -15.625rem;
+    margin-top: 2.5rem;
+
+}
