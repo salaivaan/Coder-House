@@ -143,7 +143,7 @@
 .trans:hover {
     transform: scale(1.3);
     border: 1rem;
-    border-color: aqua;
+
 }
 
 h1 {
@@ -258,23 +258,27 @@ footer {
 .imagenesDos {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 20%;
     grid-area: imgs;
     margin-left: 2rem;
-    transition: all 1s;
+    transition: all 3s;
+    border-radius: 1rem;
 
 }
 
 .imga {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
 }
 
 .imgb {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
 }
 
-.imagenesDos:hover {
-    transform: scale(4);
+.imgc {
+    border-radius: 1rem;
+
 }
 
 
@@ -302,7 +306,13 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 1.5625rem;
+    transition: all 1s;
 
+}
+
+.imagenesTres:hover{
+
+    transform: scale (0.75);
 }
 
 .remeras {
